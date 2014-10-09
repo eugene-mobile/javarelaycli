@@ -39,7 +39,7 @@ public class TCPRelayClient {
 			}
 		});
 		client.connect();
-		
+
 		System.out.println(((System.currentTimeMillis()-start)/1000)+" Sending hello");
 		client.sendCommand("Hello!");
 		try {	Thread.sleep(1000);		} catch (Exception e) {}
